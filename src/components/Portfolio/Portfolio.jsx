@@ -18,7 +18,7 @@ const Portfolio = ({ scrollToId }) => {
   const itemsLinks = [
     "https://codebyemi.github.io/cashtrack/",
     "https://codebyemi.github.io/facedetect/",
-    "https://https://github.com/codebyemi/lain",
+    "https://github.com/codebyemi/lain",
     "https://emijerochim.com/",
   ];
   const itemsDescriptions = [
