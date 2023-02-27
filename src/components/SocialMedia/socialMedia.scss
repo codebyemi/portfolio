@@ -1,0 +1,35 @@
+.social-media {
+  list-style-type: none;
+  display: flex;
+  width: 90%;
+  margin-top: 8vh;
+  margin-bottom: 3vh;
+  transition: all 0.3s ease-in;
+
+  li {
+    a {
+      img {
+        height: 5vh;
+      }
+    }
+    &:hover {
+      transform: scale(1.15);
+    }
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .social-media {
+    width: 60%;
+    li {
+      a {
+        img {
+          height: 9vh;
+        }
+      }
+    }
+  }
+}

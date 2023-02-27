@@ -1,0 +1,51 @@
+@import "../../variables";
+
+.footer {
+  background-color: $footer-background-color;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2vh;
+
+  .footer-copyright,
+  .footer-mail,
+  .footer-dev-bsas,
+  .footer-repo-label,
+  .footer-mail {
+    margin-top: 2vh;
+    color: $font-color-light;
+  }
+
+  a {
+    .footer-repo-logo {
+      margin-top: 2vh;
+      margin-bottom: 3vh;
+      height: 5vh;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+
+    .footer-copyright,
+    .footer-mail,
+    .footer-dev-bsas,
+    .footer-repo-label {
+      font-size: 25px;
+      margin-top: 4vh;
+    }
+
+    .footer-mail {
+      margin-top: 4vh;
+      margin-bottom: 6vh;
+    }
+
+    a {
+      .footer-repo-logo {
+        margin-top: 2.5vh;
+        height: 6vh;
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+@import "../../variables";
+
+.dropdown {
+  width: 100%;
+  position: fixed;
+  height: $dropdown-size-mobile;
+  margin-top: $banner-size-mobile;
+  background: $dropdown-background-color;
+  border-radius: 0 0 3% 3%;
+  transition: all 0.5s linear;
+  z-index: 2;
+
+  .options-container {
+    margin-top: 2vh;
+
+    ul {
+      list-style-type: none;
+
+      li {
+        button {
+          cursor: pointer;
+          border: none;
+          background-color: transparent;
+
+          h3 {
+            font-family: $font-family-primary;
+            color: $font-color-dark;
+            font-weight: $medium;
+            font-size: 1.5rem;
+            margin-top: 4vh;
+          }
+        }
+      }
+    }
+  }
+}
+
+.dropdown.deployed-false {
+  transform: translateX(200%);
+}
+
+@media (min-width: 768px) {
+  .dropdown {
+    height: $dropdown-size-web;
+    margin-top: $banner-size-web;
+    min-height: 350px;
+
+    .options-container {
+      margin-top: 2vh;
+
+      ul {
+        li {
+          button {
+            h3 {
+              font-size: 3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

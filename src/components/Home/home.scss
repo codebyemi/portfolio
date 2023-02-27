@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+@import "../../variables.scss";
+
+.home {
+  height: 100vh;
+  background-image: url("../../images/home.jpg");
+  background-size: 320%;
+  background-position: center;
+
+  .home-container {
+    height: $container-size-mobile + $banner-size-mobile;
+    padding-top: $banner-size-mobile + 8vh;
+    display: flex;
+    flex-direction: column;
+
+    h2,
+    p {
+      font-family: $font-family-primary;
+      color: $font-color-light;
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-weight: $semi-bold;
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: $medium;
+      margin-top: 5vh;
+      width: 85%;
+      background-color: $home-text-background-color;
+      border-radius: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home {
+    background-size: cover;
+    background-position: 25% 63%;
+
+    .home-container {
+      height: $banner-size-web + $container-size-web + 5vh;
+      padding-top: $banner-size-web + 8vh;
+
+      h2 {
+        font-size: 60px;
+      }
+
+      p {
+        font-size: 30px;
+        width: 75%;
+      }
+    }
+  }
+}

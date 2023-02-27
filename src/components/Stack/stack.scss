@@ -1,0 +1,158 @@
+@import "../../variables";
+
+.stack {
+  height: 100vh;
+
+  .stack-container {
+    height: $container-size-mobile + $banner-size-mobile;
+    padding-top: $banner-size-mobile + 2vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    //StackItem.jsx
+    .stack-item {
+      margin-bottom: 2vh;
+      h4 {
+        font-family: $font-family-primary;
+        color: $font-color-light;
+        font-weight: $medium;
+        font-size: 1.5rem;
+      }
+
+      ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+
+        li {
+          img {
+            margin-top: 1vh;
+            height: 5vh;
+          }
+        }
+      }
+    }
+
+    .Frontend {
+      width: 60vw;
+      transform: translateX(100%);
+      transition: all 0.5s ease-in-out;
+      opacity: 0;
+    }
+    .Frontend.entering-from-right {
+      transform: translateX($frontend-translate-mobile);
+      opacity: 1;
+    }
+
+    .Backend {
+      width: 40vw;
+      transform: translateX(-150%);
+      transition: all 0.5s ease-in-out;
+      opacity: 0;
+    }
+    .Backend.entering-from-left {
+      transform: translateX($backend-translate-mobile);
+      transition-delay: 0.5s;
+      opacity: 1;
+    }
+
+    .Databases {
+      width: 70vw;
+      transform: translateX(100%);
+      transition: all 0.5s ease-in-out;
+      opacity: 0;
+    }
+    .Databases.entering-from-right {
+      transform: translateX($databases-translate-mobile);
+      transition-delay: 1s;
+      opacity: 1;
+    }
+
+    .Testing {
+      width: 35vw;
+      transform: translateX(-100%);
+      transition: all 0.5s ease-in-out;
+      opacity: 0;
+    }
+    .Testing.entering-from-left {
+      transform: translateX($testing-translate-mobile);
+      transition-delay: 1.5s;
+      opacity: 1;
+    }
+
+    .Management {
+      width: 60vw;
+      transform: translateX(100%);
+      transition: all 0.5s ease-in-out;
+      opacity: 0;
+    }
+    .Management.entering-from-right {
+      transform: translateX($management-translate-mobile);
+      transition-delay: 2s;
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .stack {
+    .stack-container {
+      height: $banner-size-web + $container-size-web;
+      padding-top: $banner-size-web + 5vh;
+
+      //StackItem.jsx
+      .stack-item {
+        margin-bottom: 0vh;
+        h4 {
+          font-size: 40px;
+        }
+      }
+
+      .Frontend {
+        width: 25vw;
+        //transform: translateX($frontend-translate-web);
+      }
+      .Frontend.entering-from-right {
+        transform: translateX($frontend-translate-web);
+        opacity: 1;
+      }
+
+      .Backend {
+        width: 15vw;
+        //transform: translateX($backend-translate-web);
+      }
+      .Backend.entering-from-left {
+        transform: translateX($backend-translate-web);
+        opacity: 1;
+      }
+
+      .Databases {
+        width: 25vw;
+        //transform: translateX($databases-translate-web);
+      }
+      .Databases.entering-from-right {
+        transform: translateX($databases-translate-web);
+        opacity: 1;
+      }
+
+      .Testing {
+        width: 15vw;
+        //transform: translateX($testing-translate-web);
+      }
+      .Testing.entering-from-left {
+        transform: translateX($testing-translate-web);
+        opacity: 1;
+      }
+
+      .Management {
+        width: 25vw;
+        //transform: translateX($management-translate-web);
+      }
+      .Management.entering-from-right {
+        transform: translateX($management-translate-web);
+        opacity: 1;
+      }
+    }
+  }
+}

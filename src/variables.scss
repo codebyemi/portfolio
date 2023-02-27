@@ -1,0 +1,75 @@
+//Debugging variables
+$border-color: white;
+
+//Font variables
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+$font-family-primary: "Montserrat", sans-serif;
+$font-color-light: white;
+$font-color-dark: black;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+
+//Layout variables
+//Mobile
+$banner-size-mobile: 12vh;
+$container-size-mobile: 65vh;
+$dropdown-size-mobile: 38vh;
+
+//Web
+$banner-size-web: 15vh;
+$container-size-web: 65vh;
+$dropdown-size-web: 50vh;
+
+//Animation variables
+//Mobile
+$frontend-translate-mobile: -15vw;
+$backend-translate-mobile: 25vw;
+$databases-translate-mobile: -10vw;
+$testing-translate-mobile: 30vw;
+$management-translate-mobile: -10vw;
+
+//Web
+$frontend-translate-web: -20vw;
+$backend-translate-web: 20vw;
+$databases-translate-web: -20vw;
+$testing-translate-web: 20vw;
+$management-translate-web: -20vw;
+
+//Color variables
+$home-text-background-color: rgba(0, 0, 0, 0.2);
+
+$banner-trueDarkMode-background-color: linear-gradient(
+  180deg,
+  rgba(25, 25, 25, 1) 0%,
+  rgba(0, 0, 0, 0.5) 100%
+);
+$banner-falseDarkMode-background-color: linear-gradient(
+  180deg,
+  rgba(255, 255, 255, 1) 0%,
+  rgba(220, 220, 220, 1) 100%
+);
+
+$dropdown-background-color: linear-gradient(
+  180deg,
+  rgba(220, 220, 220, 1) 0%,
+  rgba(255, 255, 255, 1) 12%
+);
+
+$contact-mobile-background-color: linear-gradient(
+  180deg,
+  rgb(233, 129, 252) 0%,
+  rgb(128, 216, 255) 60%
+);
+
+$contact-web-background-color: linear-gradient(
+  90deg,
+  rgb(233, 129, 252) 0%,
+  rgb(128, 216, 255) 60%
+);
+
+$contact-text-background-color: rgba(0, 0, 0, 0.3);
+
+$footer-background-color: rgb(25, 25, 25);

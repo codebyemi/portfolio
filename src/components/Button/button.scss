@@ -1,0 +1,20 @@
+.scroll-button {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  margin-top: 3vh;
+  transition: all 0.1s ease-in;
+
+  .arrow {
+    height: 8vh;
+    cursor: pointer;
+  }
+  &:hover {
+    color: black;
+    transform: scale(1.2);
+  }
+  &:active {
+    color: lightslategray;
+    transform: scale(0.9);
+  }
+}

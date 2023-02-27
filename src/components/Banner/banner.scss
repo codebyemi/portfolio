@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+@import "../../variables";
+
+.banner {
+  width: 100vw;
+  height: $banner-size-mobile;
+  position: fixed;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: $banner-trueDarkMode-background-color;
+
+  .logo_container,
+  .hamburger-container {
+    width: 20vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo_container {
+    .logo {
+      height: 50%;
+    }
+  }
+
+  h1 {
+    font-family: $font-family-primary;
+    font-weight: $semi-bold;
+    font-size: 1.5rem;
+    color: $font-color-light;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .hamburger-container {
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after {
+      content: "";
+      position: absolute;
+      width: 12vw;
+      height: 5px;
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(134, 100, 87, 0.2);
+      transition: all 0.5s ease-in-out;
+    }
+    .hamburger::before {
+      transform: translate(-6vw, -2vh);
+    }
+    .hamburger::after {
+      transform: translate(-6vw, 2vh);
+    }
+  }
+}
+
+.banner.deployed-false {
+  background: $banner-falseDarkMode-background-color;
+
+  h1 {
+    color: $font-color-dark;
+  }
+
+  .hamburger-container {
+    .hamburger {
+      transform: translateX(-50px);
+      background: transparent;
+      box-shadow: none;
+    }
+    .hamburger::before {
+      transform: translateX(50%) rotate(45deg);
+      background-color: black;
+    }
+    .hamburger::after {
+      transform: translateX(50%) rotate(-45deg);
+      background-color: black;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner {
+    height: $banner-size-web;
+
+    h1 {
+      font-size: 40px;
+    }
+
+    .hamburger-container {
+      .hamburger,
+      .hamburger::before,
+      .hamburger::after {
+        width: 4vw;
+        height: 8px;
+      }
+
+      .hamburger::before {
+        transform: translate(-2vw, -2.5vh);
+      }
+      .hamburger::after {
+        transform: translate(-2vw, 2.5vh);
+      }
+    }
+  }
+}
+.banner.deployed-false {
+  .hamburger-container {
+    .hamburger::before {
+      transform: translateX(50%) rotate(45deg);
+    }
+    .hamburger::after {
+      transform: translateX(50%) rotate(-45deg);
+    }
+  }
+}
