@@ -1,25 +1,18 @@
 import React, { useState, useEffect } from "react";
-import cashtrack from "../../images/cashtrack.png";
-import facedetect from "../../images/facedetect.png";
-import lain from "../../images/lain.png";
-import emijerochim from "../../images/portfolio.png";
 import Button from "../Button/Button";
+import cashtrack from "../../images/portfolio/cashtrack.png";
+import facedetect from "../../images/portfolio/facedetect.png";
+import lain from "../../images/portfolio/lain.png";
 import "./Portfolio.scss";
 
 const Portfolio = ({ scrollToId }) => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const images = [cashtrack, facedetect, lain, emijerochim];
-  const itemsTitles = [
-    "CashTrack 💸",
-    "Facedetect AI 🧠",
-    "Lain 👽",
-    "Portfolio 💼",
-  ];
+  const images = [cashtrack, facedetect, lain];
+  const itemsTitles = ["CashTrack 💸", "Facedetect AI 🧠", "Lain 👽"];
   const itemsLinks = [
     "https://codebyemi.github.io/cashtrack/",
     "https://codebyemi.github.io/facedetect/",
     "https://github.com/codebyemi/lain",
-    "https://codebyemi.github.io/portfolio/",
   ];
   const itemsDescriptions = [
     [
@@ -41,12 +34,6 @@ const Portfolio = ({ scrollToId }) => {
       "🖥️ Backend: Node.js",
       "📚 Libraries: discord.js, openai, youtube-node, ytdl-core",
       "☁️ Deploy: Railway/Local",
-    ],
-    [
-      "Portfolio web app",
-      "📱 Frontend: React.js, Sass",
-      "📚 Libraries: react-tsparticles",
-      "☁️ Deploy: GitHub Pages",
     ],
   ];
 

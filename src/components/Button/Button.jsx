@@ -1,4 +1,4 @@
-import arrow from "../../images/arrow.png";
+import arrow from "../../images/assets/arrow.png";
 import "./button.scss";
 
 function Button({ to, scrollToId }) {

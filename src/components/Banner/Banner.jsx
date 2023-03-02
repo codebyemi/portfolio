@@ -1,5 +1,5 @@
 import "./banner.scss";
-import logo from "../../images/logo.png";
+import logo from "../../images/assets/logo.png";
 
 function Banner({ deployed, setDeployed }) {
   return (
