@@ -69,14 +69,14 @@
       opacity: 1;
     }
 
-    .Testing {
+    .Learning {
       width: 35vw;
       transform: translateX(-100%);
       transition: all 0.5s ease-in-out;
       opacity: 0;
     }
-    .Testing.entering-from-left {
-      transform: translateX($testing-translate-mobile);
+    .Learning.entering-from-left {
+      transform: translateX($learning-translate-mobile);
       transition-delay: 1.5s;
       opacity: 1;
     }
@@ -136,12 +136,12 @@
         opacity: 1;
       }
 
-      .Testing {
+      .Learning {
         width: 15vw;
-        //transform: translateX($testing-translate-web);
+        //transform: translateX($learning-translate-web);
       }
-      .Testing.entering-from-left {
-        transform: translateX($testing-translate-web);
+      .Learning.entering-from-left {
+        transform: translateX($learning-translate-web);
         opacity: 1;
       }
 

@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { html5, css3, sass, figma, react } from "../../images/stack/frontend";
-import { node, express } from "../../images/stack/backend";
+import { node, typescript, java } from "../../images/stack/backend";
 import { mysql, mongodb, postgresql } from "../../images/stack/databases";
-import { jest, testingLibrary } from "../../images/stack/testing";
+import { angular, graphql, redux } from "../../images/stack/learning";
 import { git, uml, trello, scrum } from "../../images/stack/management";
 import stackObserver from "./stackObserver";
 import Button from "../Button/Button";
@@ -24,16 +24,20 @@ function Stack({ scrollToId }) {
           entersFrom="right"
           items={[html5, css3, sass, figma, react]}
         />
-        <StackItem group="Backend" entersFrom="left" items={[node, express]} />
+        <StackItem
+          group="Backend"
+          entersFrom="left"
+          items={[node, typescript, java]}
+        />
         <StackItem
           group="Databases"
           entersFrom="right"
           items={[mysql, mongodb, postgresql]}
         />
         <StackItem
-          group="Testing"
+          group="Learning"
           entersFrom="left"
-          items={[jest, testingLibrary]}
+          items={[angular, graphql, redux]}
         />
         <StackItem
           group="Management"

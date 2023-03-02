@@ -10,7 +10,7 @@ function Footer() {
       </p>
       <p className="footer-mail">dev@emijerochim.com</p>
       <a
-        href="https://www.github.com/emijerochim"
+        href="https://www.github.com/codebyemi"
         rel="noreferrer"
         target="_blank"
       >
